@@ -24,9 +24,32 @@
     position: absolute;
     top: 105px;
     left: 1300px;
-    animation:zombieMov 1s infinity linear;
+    animation:zombieMov 7s infinite linear;
 }
 /*анимация*/
-@keyframes zombieMove { 
-    
+@keyframes zombieMov { 
+    0%{
+        left:1300px;
+    }
+    100%{
+        left:-20px;
+    }
+}
+
+.jump{
+    animation:jump 7s linear;
+}
+
+@keyframes jump { 
+    0%{
+        top:100px;
+    }
+
+    30%{
+        
+    }
+
+    100%{
+        left:100px;
+    }
 }
