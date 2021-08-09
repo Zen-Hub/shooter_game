@@ -1,0 +1,32 @@
+.game{
+    width: auto;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;;
+}
+.warrior{
+    width: 120px;
+    height: 120px;
+    background-image: url(img/warrior.png);
+    background-repeat: no-repeat;
+    background-size: 120px 120px; 
+    position: absolute;
+    top: 100px;
+}
+
+
+.zombie{
+    width: 100px;
+    height: 100px;
+    background-image: url(img/zombie.png);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    position: absolute;
+    top: 105px;
+    left: 1300px;
+    animation:zombieMov 1s infinity linear;
+}
+/*анимация*/
+@keyframes zombieMove { 
+    
+}
