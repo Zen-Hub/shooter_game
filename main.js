@@ -19,7 +19,7 @@ let isAllive = setInterval(function(){
     let zombieLeft = parseInt(window.getComputedStyle(zombie).getPropertyValue("left"));
     console.log(warriorTop)
 
-    if(zombieLeft<50&&zombieLeft>0&&warriorTop>=140){
+    if(zombieLeft<50&&zombieLeft>0&&warriorTop>=120){
         alert('GAME OVER')
     }
 },10)
