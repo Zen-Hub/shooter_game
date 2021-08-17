@@ -20,6 +20,6 @@ let isAllive = setInterval(function(){
     console.log(warriorTop)
 
     if(zombieLeft<50&&zombieLeft>0&&warriorTop>=120){
-        alert('GAME OVER')
+        alert('GAME OVER');
     }
 },10)
