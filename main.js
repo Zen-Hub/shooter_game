@@ -12,7 +12,17 @@ document.addEventListener('keydown', (event) => {
     if(event.code == 'ShiftRight'){
         alert('paused')
     }
-    console.log(event.code)
+    
+    
+})
+//------------------???----------------------------
+document.addEventListener('keydown', (event) => {
+    if(event.code == 'KeyF'){
+      let bullet =  document.createElement('bullet')
+      document.warrior.append(bullet);
+      console.log(event.code)
+    }
+    
     
 })
 

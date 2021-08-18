@@ -23,6 +23,27 @@
     top: 240px;
 }
 
+.bullet{
+    height: 5px;
+    width: 10px;
+    background-color: rgb(233, 13, 13);
+    position: absolute;
+    top: 270px;
+    left: 90px;
+    animation: bulletMov 10s infinite linear;
+}
+
+/*animation bullet*/
+@keyframes bulletMov {
+    0% {
+        left: 90px;
+    }
+
+    100% {
+        left: 150px;
+    }
+}
+/*animation bullet end*/
 
 .warrior {
     width: 115px;
@@ -34,30 +55,7 @@
     top: 200px;
 }
 
-
-.zombie {
-    width: 100px;
-    height: 100px;
-    background-image: url(img/zombie.png);
-    background-repeat: no-repeat;
-    background-size: 100px 100px;
-    position: absolute;
-    top: 205px;
-    left: 1300px;
-    /* animation: zombieMov 3s infinite linear; */
-}
-
-/*анимация*/
-@keyframes zombieMov {
-    0% {
-        left: 1300px;
-    }
-
-    100% {
-        left: -20px;
-    }
-}
-
+/*animation jump warrior */
 .jump {
     animation: jump 3s linear;
 }
@@ -87,3 +85,30 @@
         top: 200px;
     }
 }
+/*animation jump warrior end */
+
+
+.zombie {
+    width: 100px;
+    height: 100px;
+    background-image: url(img/zombie.png);
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+    position: absolute;
+    top: 205px;
+    left: 1300px;
+    /* animation: zombieMov 30s infinite linear; */
+}
+
+/*animation zombie*/
+@keyframes zombieMov {
+    0% {
+        left: 1300px;
+    }
+
+    100% {
+        left: -20px;
+    }
+}
+/*animation bullet end*/
+
