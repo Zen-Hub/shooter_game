@@ -1,10 +1,28 @@
-.game {
-    width: auto;
-    height: 300px;
-    border-bottom: 1px solid #000;
-    margin: auto;
-    ;
+* {
+    box-sizing: border-box;
+  }
+
+.body{
+    margin: 0;
+    padding: 0;
 }
+
+.game {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+}
+
+.floor {
+    width: 100%;
+    height: 120px;
+    background-image: url(img/floor.png);
+    background-repeat: repeat;
+    background-size: 120px 120px;
+    position: absolute;
+    top: 240px;
+}
+
 
 .warrior {
     width: 115px;
@@ -26,7 +44,7 @@
     position: absolute;
     top: 205px;
     left: 1300px;
-    animation: zombieMov 3s infinite linear;
+    /* animation: zombieMov 3s infinite linear; */
 }
 
 /*анимация*/

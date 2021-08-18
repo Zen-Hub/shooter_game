@@ -1,8 +1,19 @@
 const warrior = document.querySelector('.warrior');
 const zombie = document.querySelector('.zombie');
 
-document.addEventListener('keydown', (e) => {
-    jump();
+document.addEventListener('keydown', (event) => {
+    if(event.code == 'Space'){
+        jump();
+    }
+    
+})
+
+document.addEventListener('keydown', (event) => {
+    if(event.code == 'ShiftRight'){
+        alert('paused')
+    }
+    console.log(event.code)
+    
 })
 
 function jump() {
